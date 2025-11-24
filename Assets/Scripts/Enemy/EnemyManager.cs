@@ -5,6 +5,9 @@ public class EnemyManager : MonoBehaviour
     // Enemy spawnpoint (assigned in heirarchy)
     [SerializeField] private GameObject spawnpoint;
 
+    // Player reticle (assigned in heirarchy)
+    [SerializeField] private GameObject reticle;
+
     // Enemy prefabs (assigned in heirarchy)
     [SerializeField] private GameObject[] enemyPrefab;
 
@@ -14,6 +17,7 @@ public class EnemyManager : MonoBehaviour
     // How fast to spawn enemies
     private float bpm;
     private float currentTime;
+    [SerializeField] private float scrollRate = 1f;
 
     void Awake()
     {// Check if there are any enemies to spawn
@@ -56,12 +60,22 @@ public class EnemyManager : MonoBehaviour
         else { pos = spawnpoint.transform.position; }
 
         // Spawn the enemy
-        //float tempdiv = 15f;
         GameObject enemy = Instantiate(enemyPrefab[index], pos, enemyPrefab[index].transform.rotation, this.transform);
-        enemy.GetComponent<EnemyController>().SetSpeed(bpm / 4f);
+
+        // Distance between enemy spawnpoint and player reticle
+        float distance = Mathf.Abs(spawnpoint.transform.position.x - reticle.transform.position.x);
+
+        // The time it should take for the enemy to move to the reticle from its spawnpoint
+        float time;
+        if(scrollRate != 0) { time = bpm / 60f / scrollRate; }
+        else { time = bpm / 60f; }
+
+        // Set enemy speed
+        enemy.GetComponent<EnemyController>().SetSpeed(distance/time);
     }
 
     // Reset the timer to its starting time
+    // Controls when enemies are spawned, NOT how fast they move
     private void ResetTimer()
     {
         Debug.Log("Step");

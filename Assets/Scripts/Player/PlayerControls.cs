@@ -88,4 +88,13 @@ public class PlayerControls : MonoBehaviour
         animator.ResetTrigger("Up");
         animator.SetTrigger("Right");
     }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if(collider.tag.Equals("Enemy"))
+        {
+            Debug.Log("Miss!");
+            missEvent.Invoke();
+        }
+    }
 }
