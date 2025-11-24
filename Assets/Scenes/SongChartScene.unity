@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentScroll
   scrollRate: 1
+  spriteWidth: 0
 --- !u!1 &347739926
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentScroll
   scrollRate: 0.5
+  spriteWidth: 0
 --- !u!1 &719946666
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,11 +830,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawn
   spawnpoint: {fileID: 719946666}
+  reticle: {fileID: 347739926}
   enemyPrefab:
   - {fileID: 4586109411346426399, guid: d7b99d6d1e1f23a40a2667c1d46b52f3, type: 3}
   - {fileID: 4586109411346426399, guid: 07808e5b9d218314c8f099c16ec280e5, type: 3}
   - {fileID: 4586109411346426399, guid: fa3630d1d4f72fe4f9b32349a6781241, type: 3}
   - {fileID: 4586109411346426399, guid: d1f894d6a3cca4b42b1dadb918102bb9, type: 3}
+  scrollRate: 1
 --- !u!1 &994851628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentScroll
   scrollRate: 0.25
+  spriteWidth: 0
 --- !u!1 &1132573535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentScroll
   scrollRate: 2
+  spriteWidth: 0
 --- !u!1 &1807392886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentScroll
   scrollRate: 1.5
+  spriteWidth: 0
 --- !u!1 &2101179853
 GameObject:
   m_ObjectHideFlags: 0

@@ -176,6 +176,61 @@ public class EnemyManager : MonoBehaviour
         EnemySpawnInfo.Add((3, 47.5f));
         EnemySpawnInfo.Add((3, 48.0f));
         EnemySpawnInfo.Add((0, 48.8f));
+
+        // 0 = armor, 1 = mage, 2 = shield, 3 = sword
+        EnemySpawnInfo.Add((2, 50.3f));
+        EnemySpawnInfo.Add((2, 51.6f));
+        EnemySpawnInfo.Add((2, 52.9f));
+        EnemySpawnInfo.Add((1, 54.17f));
+        EnemySpawnInfo.Add((2, 55.5f));
+        EnemySpawnInfo.Add((3, 56.1f));
+        EnemySpawnInfo.Add((2, 56.8f));
+        EnemySpawnInfo.Add((3, 57.4f));
+        EnemySpawnInfo.Add((2, 58.1f));
+        EnemySpawnInfo.Add((3, 58.9f));
+        EnemySpawnInfo.Add((2, 59.6f));
+        EnemySpawnInfo.Add((3, 60.2f));
+        EnemySpawnInfo.Add((3, 60.8f));
+        EnemySpawnInfo.Add((3, 61.1f));
+        EnemySpawnInfo.Add((3, 61.5f));
+        EnemySpawnInfo.Add((2, 62.3f));
+        EnemySpawnInfo.Add((3, 62.7f));
+        EnemySpawnInfo.Add((3, 63.5f));
+        EnemySpawnInfo.Add((3, 64.1f));
+        EnemySpawnInfo.Add((0, 64.8f));
+
+        EnemySpawnInfo.Add((3, 66.0f));
+        EnemySpawnInfo.Add((3, 67.5f));
+        EnemySpawnInfo.Add((3, 68.1f));
+        EnemySpawnInfo.Add((3, 68.8f));
+        EnemySpawnInfo.Add((1, 69.1f));
+        EnemySpawnInfo.Add((1, 69.5f));
+        EnemySpawnInfo.Add((3, 70.3f));
+        EnemySpawnInfo.Add((3, 71.4f));
+        EnemySpawnInfo.Add((3, 72.9f));
+        EnemySpawnInfo.Add((3, 73.5f));
+        EnemySpawnInfo.Add((3, 74.1f));
+        EnemySpawnInfo.Add((3, 74.8f));
+        EnemySpawnInfo.Add((2, 75.6f));
+        EnemySpawnInfo.Add((3, 76.1f));
+        EnemySpawnInfo.Add((3, 76.7f));
+        EnemySpawnInfo.Add((3, 77.4f));
+        EnemySpawnInfo.Add((3, 76.8f));
+        EnemySpawnInfo.Add((2, 79.0f));
+        EnemySpawnInfo.Add((3, 89.3f));
+        EnemySpawnInfo.Add((3, 79.7f));
+        EnemySpawnInfo.Add((3, 80.1f));
+        EnemySpawnInfo.Add((2, 80.8f));
+        EnemySpawnInfo.Add((2, 81.5f));
+        EnemySpawnInfo.Add((2, 82.2f));
+        EnemySpawnInfo.Add((3, 82.5f));
+        EnemySpawnInfo.Add((2, 83.0f));
+        EnemySpawnInfo.Add((3, 83.6f));
+        EnemySpawnInfo.Add((3, 84.2f));
+        EnemySpawnInfo.Add((3, 84.9f));
+        EnemySpawnInfo.Add((3, 85.2f));
+        EnemySpawnInfo.Add((3, 85.6f));
+        EnemySpawnInfo.Add((0, 86.2f));
     }
 
     // Reset the timer to its starting time
