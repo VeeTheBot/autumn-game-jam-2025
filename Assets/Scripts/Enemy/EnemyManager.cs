@@ -79,6 +79,6 @@ public class EnemyManager : MonoBehaviour
     private void ResetTimer()
     {
         Debug.Log("Step");
-        currentTime = bpm / 60f / 4f;
+        currentTime = bpm / 60f;
     }
 }

@@ -17,6 +17,9 @@ public class PlayerControls : MonoBehaviour
     // The animator
     private Animator animator;
 
+    // Player-controlled sfx
+    private PlayerSFXController sfx;
+
     private void Awake()
     {
         // Fetch new player scheme
@@ -24,6 +27,9 @@ public class PlayerControls : MonoBehaviour
 
         // Fetch animator
         animator = GetComponentInChildren<Animator>();
+
+        // Fetch player sfx
+        sfx = GetComponentInChildren<PlayerSFXController>();
     }
 
     private void OnEnable()
@@ -60,6 +66,8 @@ public class PlayerControls : MonoBehaviour
         animator.ResetTrigger("Down");
         animator.ResetTrigger("Up");
         animator.ResetTrigger("Right");
+
+        if(sfx.GetTargeted()) { sfx.PlayShield(); }
     }
 
     private void Down(InputAction.CallbackContext context)
@@ -69,6 +77,8 @@ public class PlayerControls : MonoBehaviour
         animator.SetTrigger("Down");
         animator.ResetTrigger("Up");
         animator.ResetTrigger("Right");
+
+        if(sfx.GetTargeted()) { sfx.PlaySword(); }
     }
 
     private void Up(InputAction.CallbackContext context)
@@ -78,6 +88,8 @@ public class PlayerControls : MonoBehaviour
         animator.ResetTrigger("Down");
         animator.SetTrigger("Up");
         animator.ResetTrigger("Right");
+
+        if(sfx.GetTargeted()) { sfx.PlayHammer(); }
     }
 
     private void Right(InputAction.CallbackContext context)
@@ -87,14 +99,7 @@ public class PlayerControls : MonoBehaviour
         animator.ResetTrigger("Down");
         animator.ResetTrigger("Up");
         animator.SetTrigger("Right");
-    }
 
-    private void OnTriggerExit2D(Collider2D collider)
-    {
-        if(collider.tag.Equals("Enemy"))
-        {
-            Debug.Log("Miss!");
-            missEvent.Invoke();
-        }
+        if(sfx.GetTargeted()) { sfx.PlaySpear(); }
     }
 }
