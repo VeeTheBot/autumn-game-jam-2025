@@ -2,8 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - SongInfo
+  - TriggerEnemy
   layers:
   - Default
   - TransparentFX
@@ -41,3 +44,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 2092043355
+    locked: 0
+  - name: Ground
+    uniqueID: 2057220313
+    locked: 0
+  - name: Enemy
+    uniqueID: 369930999
+    locked: 0
+  - name: Player
+    uniqueID: 2224232563
+    locked: 0
+  - name: Foreground
+    uniqueID: 2264161367
+    locked: 0
+  m_RenderingLayers:
+  - Default
