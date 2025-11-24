@@ -56,6 +56,7 @@ public class EnemyManager : MonoBehaviour
         else { pos = spawnpoint.transform.position; }
 
         // Spawn the enemy
+        //float tempdiv = 15f;
         GameObject enemy = Instantiate(enemyPrefab[index], pos, enemyPrefab[index].transform.rotation, this.transform);
         enemy.GetComponent<EnemyController>().SetSpeed(bpm / 4f);
     }
